@@ -16,10 +16,21 @@ spring boot 에서 제공하는 고도로 추상화된 해당 annotation을 넣�
 @EnableAutoConfiguration tells Spring Boot to start adding beans based on classpath settings, other beans, and various property settings. Technically, Spring Boot doesn’t have anything to auto-configure when it comes to scheduling but a future version might.
 @ComponentScan tells Spring to look for other components, configurations, and services
 
+### 독립 실행가능 한 jar
+spring boot는 특별한 launcher를 사용하여 독립된 형태로 실행가능
+1. jarLauncher
+2. warLauncher
+
+실행파일 내부에 의존성이 있는 라이브러리들이 repackage 작업을 통하여 별도의 디렉토리 구조로 복사되어 빌드 
+1. spring boot:run
+2. spring boot:repackage
+
+
 
 
 ## 참고
 - http://www.namooz.com/2016/02/09/springbootapplication-meaning/
+- https://www.slideshare.net/heungrae_kim/spring-boot-docker-msa
 
 
 
